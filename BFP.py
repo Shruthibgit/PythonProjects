@@ -7,11 +7,11 @@ def bfp_calculator():
     bmi = weight / (height_meters ** 2)
     print("Your BMI is ", round(bmi,2))
 
-    if gen == 'm':
+    if gend == 'm':
         bfp = (1.20*bmi)+(0.23*age)-16.2
         print("Your Body fat percentage = ", round(bfp,2))
 
-    elif gen == 'f':
+    elif gend == 'f':
         bfp = (1.20 * bmi) + (0.23 * age) - 5.4
         print("Your Body fat percentage = ", round(bfp,2))
 
@@ -21,6 +21,7 @@ while True:
      height = float(input("Enter you height in inches: "))
      age = int(input("Enter your age: "))
      gen = input("Enter your gender M/F: ")
+     gend = gen.lower()
  except:
      print("Please enter the valid data!!!!")
      continue
