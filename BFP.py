@@ -28,4 +28,4 @@ while True:
      bfp_calculator()
  break
 
-print("Thank you for using BMI calculator!!")
+print("Thank you!!")
